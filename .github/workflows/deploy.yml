@@ -1,3 +1,4 @@
+# Workflow 이름
 name: Github Actions Execution
 
 # Event : 실행되는 시점을 설정
@@ -26,3 +27,9 @@ jobs:
               run: |
                 echo "Good"
                 echo "Morning"
+
+            - name : Github Actions에서 제공하는 환경 변수 사용하기
+              run: |
+                echo $GITHUB_SHA
+                echo $GITHUB_REPOSITORY
+            
